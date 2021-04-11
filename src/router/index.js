@@ -1,19 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Login from '../components/Login'
-import Home from '../views/Home'
-import Welcome from '../components/Welcome'
-import Users from '../views/user/Users'
-import Rights from '../views/power/Rights'
-import Roles from '../views/power/Roles'
-import Cate from '../views/goods/Cate'
-import Params from '../views/goods/Params'
-import GoodsList from '../views/goods/List'
-import GoodsAdd from '../views/goods/Add'
-import Order from '../views/order/Order'
-import Report from '../views/report/Report'
-
+const Login = () => import(/* webpackChunkName: "group-foo" */ '../components/Login')
+const Home = () => import(/* webpackChunkName: "group-foo" */ '../views/Home')
+const Welcome = () => import(/* webpackChunkName: "group-foo" */ '../components/Welcome')
+const Users = () => import(/* webpackChunkName: "group-foo" */ '../views/user/Users')
+const Rights = () => import(/* webpackChunkName: "group-foo" */ '../views/power/Rights')
+const Roles = () => import(/* webpackChunkName: "group-foo" */ '../views/power/Roles')
+const Cate = () => import(/* webpackChunkName: "group-foo" */ '../views/goods/Cate')
+const Params = () => import(/* webpackChunkName: "group-foo" */ '../views/goods/Params')
+const GoodsList = () => import(/* webpackChunkName: "group-foo" */ '../views/goods/List')
+const GoodsAdd = () => import(/* webpackChunkName: "group-foo" */ '../views/goods/Add')
+const Order = () => import(/* webpackChunkName: "group-foo" */ '../views/order/Order')
+const Report = () => import(/* webpackChunkName: "group-foo" */ '../views/report/Report')
 Vue.use(VueRouter)
 
 const routes = [
